@@ -12,6 +12,7 @@ public class PizzaBar {
     }
 
     public ArrayList<Bestilling> getBestillinger() {
+        sortBestillinger();
         return bestillinger;
     }
 
@@ -26,4 +27,18 @@ public class PizzaBar {
             }
         });
     }
+
+    public int calculateLastMonthEarnings(){
+        int earnings = 0;
+
+        return earnings;
+    }
+
+    public int calcultateTodaysEarnings(){
+        int earnings = 0;
+
+        return earnings;
+    }
+
+
 }
