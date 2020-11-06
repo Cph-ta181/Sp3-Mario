@@ -27,45 +27,5 @@ import java.util.Scanner;
 
         }
 
-        private void exit() {
         }
-
-        private void visAktiveBestillinger() {
-        }
-
-        private void bestilPizza() {
-        }
-
-        private void visPizza() {
-        }
-
-        private void printMenuKort() {
-        }
-
-
-        @Override
-        public List<Pizza> getPizza() {
-            return null;
-        }
-
-        @Override
-        public List<Bestilling> getAlleOrdrer() {
-            return null;
-        }
-
-        @Override
-        public Bestilling ordrerId(int id) {
-            return null;
-        }
-
-        @Override
-        public void GemOrdrer(Bestilling ordrer) {
-
-        }
-
-        @Override
-        public void markerOrdrerSomFærdig(Bestilling ordrer) {
-
-
-        }
-    }
+        
