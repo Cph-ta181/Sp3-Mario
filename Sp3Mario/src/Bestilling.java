@@ -23,7 +23,7 @@ public class Bestilling {
     public int totalPrice(){
        int totalPrice = 0;
        for (Pizza pizza:pizzas) {
-            //totalPrice+=pizza.getPrice;
+            totalPrice+=pizza.getPrice();
 
        }
 
