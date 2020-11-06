@@ -54,21 +54,18 @@ import java.util.Scanner;
         }
 
         @Override
-        public Bestilling getOrderById(int id) {
+        public Bestilling ordrerId(int id) {
             return null;
         }
 
         @Override
-        public void saveOrder(Bestilling ordrer) {
+        public void GemOrdrer(Bestilling ordrer) {
 
         }
 
         @Override
-        public void markOrderAsDone(Bestilling ordrer) {
+        public void markerOrdrerSomFærdig(Bestilling ordrer) {
 
-        }
-        @Override
-        public void markOrderAsDone(Bestilling ordrer) {
 
         }
     }
