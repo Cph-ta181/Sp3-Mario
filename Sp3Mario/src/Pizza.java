@@ -1,11 +1,11 @@
 //@Sania
 
-public class Pizza{
+public class Pizza {
 
 
-private String pizzaName;
-private int number;
-private int price;
+    private String pizzaName;
+    private int number;
+    private int price;
 
     public Pizza(String pizzaName, int number, int price) {
         this.pizzaName = pizzaName;
@@ -23,8 +23,15 @@ private int price;
         return number;
     }
 
+
     public int getPrice() {
 
         return price;
     }
+
+    @Override
+    public String toString() {
+        return "Pizza name:" + pizzaName + "Number:" + number + "Price:" + price;
+    }
+
 }
