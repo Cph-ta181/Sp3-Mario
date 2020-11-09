@@ -39,4 +39,12 @@ public class Bestilling {
 
         pizzas.remove(pizzaToRemove);
    }
+
+    @Override
+    public String toString() {
+        return "Bestilling{" + "pizzas=" + pizzas + ", datetime=" + datetime + ", paid=" + paid +
+                '}';
+    }
 }
+
+
