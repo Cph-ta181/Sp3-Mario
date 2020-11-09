@@ -11,7 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c438c7a9-6904-4d23-95be-4570af5bc242" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/src/Pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pizza.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UIController.java" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,9 +74,20 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< Updated upstream
     <state x="931" y="163" key="#com.intellij.ide.util.MemberChooser" timestamp="1604929124532">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="931" y="163" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1604929124532" />
+=======
+    <state x="443" y="109" key="#com.intellij.ide.util.MemberChooser" timestamp="1604925944483">
+      <screen x="0" y="22" width="1280" height="729" />
+    </state>
+    <state x="443" y="109" key="#com.intellij.ide.util.MemberChooser/0.22.1280.729@0.22.1280.729" timestamp="1604925944483" />
+    <state x="295" y="75" width="670" height="676" key="search.everywhere.popup" timestamp="1604927133441">
+      <screen x="0" y="22" width="1280" height="729" />
+    </state>
+    <state x="295" y="75" width="670" height="676" key="search.everywhere.popup/0.22.1280.729@0.22.1280.729" timestamp="1604927133441" />
+>>>>>>> Stashed changes
   </component>
 </project>
