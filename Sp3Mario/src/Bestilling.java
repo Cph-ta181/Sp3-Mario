@@ -49,10 +49,19 @@ public class Bestilling {
 
     @Override
     public String toString() {
-        return "Bestilling" +
-                "pizzas" + pizzas +
-                " datetime" + datetime +
-                " paid" + paid;
+        String tempString = "\nBestilling";
+        for (Pizza pizza: pizzas){
+            tempString += "\n"+ pizza.getNumber();
+        }
+        tempString += "\nPris: "+totalPrice();
+        tempString += "\nDato: "+datetime;
+        if (paid){
+            tempString += "Er betalt";
+        }
+        else{
+            tempString += "Er ikke betalt";
+        }
+        return tempString;
     }
 }
 
