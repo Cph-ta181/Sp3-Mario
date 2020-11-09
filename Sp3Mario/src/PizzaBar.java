@@ -41,7 +41,7 @@ public class PizzaBar {
 
     private void saveCompletedOrders() {
         try {
-            FileOutputStream fop = new FileOutputStream("/resources/completedOrders.txt");
+            FileOutputStream fop = new FileOutputStream("./resources/completedOrders.txt");
             ObjectOutputStream oos = new ObjectOutputStream(fop);
             oos.writeObject(completedBestillinger);
 
@@ -52,10 +52,16 @@ public class PizzaBar {
 
     private ArrayList<Bestilling> readCompletedOrders() {
         ArrayList<Bestilling> orders = new ArrayList<>();
+
         try {
-            FileInputStream fis = new FileInputStream("/resources/completedOrders.txt");
-            ObjectInputStream ois = new ObjectInputStream(fis);
-            orders = (ArrayList<Bestilling>) ois.readObject();
+            FileReader fr = new FileReader("./resources/completedOrders.txt");
+            BufferedReader br = new BufferedReader(fr);
+            String line = br.readLine();
+            if (line != null) {
+                FileInputStream fis = new FileInputStream("./resources/completedOrders.txt");
+                ObjectInputStream ois = new ObjectInputStream(fis);
+                orders = (ArrayList<Bestilling>) ois.readObject();
+            }
 
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();

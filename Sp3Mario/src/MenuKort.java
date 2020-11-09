@@ -1,12 +1,14 @@
 //Firat
 import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class MenuKort {
-    private List<Pizza> pizzas;
+    private ArrayList<Pizza> pizzas;
 
     public MenuKort(String filename) {
-        File file = new File("/resources/pizzaer.txt");
+        pizzas = new ArrayList<Pizza>();
+        File file = new File(filename);
         try {
             FileReader fr = new FileReader(file);
             BufferedReader br = new BufferedReader(fr);

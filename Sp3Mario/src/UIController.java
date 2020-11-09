@@ -4,7 +4,7 @@ import java.util.*;
 
 public class UIController {
     Scanner sc = new Scanner(System.in);
-    MenuKort menu = new MenuKort("/resources/pizzaer.txt");
+    MenuKort menu = new MenuKort("./resources/pizzaer.txt");
     PizzaBar MariosPizzaBar = new PizzaBar(menu);
 
 
