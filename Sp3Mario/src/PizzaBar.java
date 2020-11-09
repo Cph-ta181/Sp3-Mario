@@ -7,7 +7,7 @@ public class PizzaBar {
     private ArrayList<Bestilling> completedBestillinger = new ArrayList<>();
     private MenuKort menu;
 
-    public  PizzaBar(MenuKort menu){
+    public PizzaBar(MenuKort menu) {
         this.menu = menu;
         this.completedBestillinger = readCompletedOrders();
     }
@@ -21,7 +21,7 @@ public class PizzaBar {
         return menu;
     }
 
-    private void sortBestillinger(ArrayList<Bestilling> arrList){
+    private void sortBestillinger(ArrayList<Bestilling> arrList) {
         Collections.sort(arrList, new Comparator<Bestilling>() {
             public int compare(Bestilling b1, Bestilling b2) {
                 return b1.getDatetime().compareTo(b2.getDatetime());
@@ -29,13 +29,13 @@ public class PizzaBar {
         });
     }
 
-    public void removeBestilling(Bestilling bestilling){
+    public void removeBestilling(Bestilling bestilling) {
         bestillinger.remove(bestilling);
         completedBestillinger.add(bestilling);
         saveCompletedOrders();
     }
 
-    private void saveCompletedOrders(){
+    private void saveCompletedOrders() {
         try {
             FileOutputStream fop = new FileOutputStream("/resources/completedOrders.txt");
             ObjectOutputStream oos = new ObjectOutputStream(fop);
@@ -46,12 +46,12 @@ public class PizzaBar {
         }
     }
 
-    private ArrayList<Bestilling> readCompletedOrders(){
+    private ArrayList<Bestilling> readCompletedOrders() {
         ArrayList<Bestilling> orders = new ArrayList<>();
         try {
             FileInputStream fis = new FileInputStream("/resources/completedOrders.txt");
             ObjectInputStream ois = new ObjectInputStream(fis);
-            orders = (ArrayList<Bestilling>)ois.readObject();
+            orders = (ArrayList<Bestilling>) ois.readObject();
 
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
@@ -59,11 +59,11 @@ public class PizzaBar {
         return orders;
     }
 
-    public int calculateThisMonthEarnings(){
+    public int calculateThisMonthEarnings() {
         int earnings = 0;
         sortBestillinger(completedBestillinger);
 
-        for (int i = 0; completedBestillinger.get(i).getDatetime().get(Calendar.MONTH) == Calendar.MONTH; i++){
+        for (int i = 0; completedBestillinger.get(i).getDatetime().get(Calendar.MONTH) == Calendar.MONTH; i++) {
             earnings += completedBestillinger.get(i).totalPrice();
         }
         return earnings;
