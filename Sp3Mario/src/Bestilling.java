@@ -49,9 +49,12 @@ public class Bestilling {
 
     @Override
     public String toString() {
-        return "Bestilling{" + "pizzas=" + pizzas + ", datetime=" + datetime + ", paid=" + paid +
-                '}';
+        return "Bestilling" +
+                "pizzas" + pizzas +
+                " datetime" + datetime +
+                " paid" + paid;
     }
 }
+
 
 
