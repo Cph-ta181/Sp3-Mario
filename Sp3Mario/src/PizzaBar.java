@@ -35,6 +35,10 @@ public class PizzaBar {
         saveCompletedOrders();
     }
 
+    public void addBestilling(Bestilling bestilling){
+        bestillinger.add(bestilling);
+    }
+
     private void saveCompletedOrders() {
         try {
             FileOutputStream fop = new FileOutputStream("/resources/completedOrders.txt");
