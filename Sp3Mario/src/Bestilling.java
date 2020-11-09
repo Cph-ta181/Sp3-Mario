@@ -4,9 +4,16 @@ import java.util.GregorianCalendar;
 
 
 public class Bestilling {
+
     private  List<Pizza> pizzas;
     private  GregorianCalendar datetime;
     private  Boolean paid;
+
+    public Bestilling(List<Pizza> pizzas, GregorianCalendar datetime, Boolean paid) {
+        this.pizzas = pizzas;
+        this.datetime = datetime;
+        this.paid = paid;
+    }
 
     public List<Pizza> getPizzas() {
         return pizzas;
@@ -42,9 +49,12 @@ public class Bestilling {
 
     @Override
     public String toString() {
-        return "Bestilling{" + "pizzas=" + pizzas + ", datetime=" + datetime + ", paid=" + paid +
-                '}';
+        return "Bestilling" +
+                "pizzas" + pizzas +
+                " datetime" + datetime +
+                " paid" + paid;
     }
 }
+
 
 
