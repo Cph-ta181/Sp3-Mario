@@ -9,11 +9,13 @@ public class Pizza implements Serializable {
     private int number;
     private int price;
 
-    public Pizza(String pizzaName, int number, int price) {
+    public Pizza(int number, int price, String pizzaName) {
         this.pizzaName = pizzaName;
         this.number = number;
         this.price = price;
     }
+
+    //public Pizza(String s, int price, int parseInt) {} - se bort fra dette.
 
     public String getPizzaName() {
 

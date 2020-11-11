@@ -59,6 +59,9 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="770" y="158" key="#com.intellij.ide.util.MemberChooser" timestamp="1604923033720">
       <screen x="0" y="0" width="1440" height="900" />
