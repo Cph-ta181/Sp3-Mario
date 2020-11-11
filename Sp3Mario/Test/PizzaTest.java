@@ -11,8 +11,6 @@ public class PizzaTest {
         int actual = pizza.toString().length();
         assertEquals(expected,actual);
 
-
-
     }
 
 }
