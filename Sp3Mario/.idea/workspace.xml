@@ -47,6 +47,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -98,26 +102,30 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1605091427796">
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1605107171460">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1605091427796" />
-    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1605091427796">
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1605107171460" />
+    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1605107171460">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1605091427796" />
-    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1605091427796">
+    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1605107171460" />
+    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1605107171460">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1605091427796" />
-    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1605091427796">
+    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1605107171460" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1605107171460">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1605091427796" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1605107171460" />
     <state x="760" y="274" key="SettingsEditor" timestamp="1604932780943">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="760" y="274" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1604932780943" />
+    <state x="984" y="592" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1605107019732">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="984" y="592" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.2560.1400@0.0.2560.1400" timestamp="1605107019732" />
     <state x="499" y="227" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1605093426300">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
