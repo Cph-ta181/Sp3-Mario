@@ -69,12 +69,26 @@ public class PizzaBar {
         return orders;
     }
 
+    public void printMostBoughtPizzas(){
+        int[] buyCount = new int[menu.getPizzas().size()+1];
+        for (Bestilling bestilling : completedBestillinger){
+            for (Pizza pizza : bestilling.getPizzas()){
+                buyCount[pizza.getNumber()]++;
+            }
+        }
+        for (Pizza pizza : menu.getPizzas()){
+            System.out.println(pizza.getPizzaName() + ": " + buyCount[pizza.getNumber()]);
+        }
+    }
+
     public int calculateThisMonthEarnings() {
         int earnings = 0;
         sortBestillinger(completedBestillinger);
 
-        for (int i = 0; completedBestillinger.get(i).getDatetime().get(Calendar.MONTH) == Calendar.MONTH; i++) {
-            earnings += completedBestillinger.get(i).totalPrice();
+        for (int i = 0; i < completedBestillinger.size() ; i++) {
+            if (completedBestillinger.get(i).getDatetime().get(Calendar.MONTH) == Calendar.getInstance().get(Calendar.MONTH)+1) {
+                earnings += completedBestillinger.get(i).totalPrice();
+            }
         }
         return earnings;
     }

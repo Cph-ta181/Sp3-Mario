@@ -1,9 +1,10 @@
 //@Mathias
+import java.io.Serializable;
 import java.util.List;
 import java.util.GregorianCalendar;
 
 
-public class Bestilling {
+public class Bestilling implements Serializable {
 
     private  List<Pizza> pizzas;
     private  GregorianCalendar datetime;
@@ -49,7 +50,7 @@ public class Bestilling {
 
     @Override
     public String toString() {
-        String tempString = "\nBestilling";
+        String tempString = "Bestilling";
         for (Pizza pizza: pizzas){
             tempString += "\n"+ pizza.getNumber();
         }
@@ -59,7 +60,7 @@ public class Bestilling {
             tempString += "Er betalt";
         }
         else{
-            tempString += "Er ikke betalt";
+            tempString += "Er ikke betalt\n";
         }
         return tempString;
     }

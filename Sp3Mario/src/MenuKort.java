@@ -45,7 +45,7 @@ public class MenuKort {
     public String toString() {
         String tempString = "";
         for (Pizza pizza:pizzas) {
-            tempString+=pizza;
+            tempString+=pizza + "\n";
         }
         return tempString;
     }

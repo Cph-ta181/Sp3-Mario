@@ -1,6 +1,8 @@
 //@Sania
 
-public class Pizza {
+import java.io.Serializable;
+
+public class Pizza implements Serializable {
 
 
     private String pizzaName;
@@ -31,7 +33,7 @@ public class Pizza {
 
     @Override
     public String toString() {
-        return "Pizza name:" + pizzaName + "Number:" + number + "Price:" + price;
+        return "Pizza: " + pizzaName + " Nr: " + number + " Pris: " + price;
     }
 
 }
